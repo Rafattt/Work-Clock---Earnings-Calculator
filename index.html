@@ -1,0 +1,114 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Work Clock</title>
+        <meta name="description" content="Work Clock">
+        <meta name="author" content="Rafal Kmiecik">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/bootstrap/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans" rel="stylesheet">
+        <script src="src/jquery/dist/jquery.min.js"></script>
+        <script src="src/script.js"></script>
+        <script src="src/time.js"></script>
+        <script src="src/earnings.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <div id="title-box">
+                    <div id="logo">
+                            <img src="src/img/clocksm.png" alt="clock">
+                    </div>
+                    <div id="title">
+                        Work Clock
+                    </div>
+                </div>
+            </header>
+            <div id="input-box">
+                <div id="start-title" class="input-titles">Enter start time (use <span style="color:red;">HH:MM</span> 24h format)</div>
+                <input class="input" type="text" id="start" >
+                <div class="incorrect" id="start-time-incorrect">Incorrect format</div>
+                <div id="end-time" class="input-titles">Enter expected end time (use <span style="color:red;">HH:MM</span> 24h format)</div>
+                <input class="input" type="text" id="end">
+                <div class="incorrect" id="end-time-incorrect">Incorrect format</div>
+                <div id="hour-rate" class="input-titles">Enter hour rate</div>
+                <input class="input" type="text" id="rate">
+                <div class="incorrect"  id="rate-incorrect">Incorrect format</div>
+                <div id="tax-total" class="input-titles">Enter % of total tax deduction*</div>
+                <input class="input" type="text" id="tax">
+                <div class="incorrect"  id="tax-incorrect">Incorrect format</div>
+                <button id="ok-button" type="button" class="btn btn-primary disabled">Ok</button>
+                <div id="tax-info">*If you leave it blank it will be calculated as tax free</div>
+            </div>
+            <div id="main">
+                <div id="main-box" class="row">
+                    <div id="main-box-left" class="col-md-7">
+                        <div id="time-left">
+                            <div id="time-left-header">Time left:</div>
+                            <div id="time-left-numbers">00:00:00</div>
+                        </div>
+                        <div id="times-info-box" class="row">
+                                <div id="current-time" class="col-md-4">
+                                        <div id="current-time-header">Current time:</div>
+                                        <div id="current-time-numbers">00:00:00</div>
+                                </div>
+                                <div id="time-elapsed" class="col-md-4">
+                                        <div id="time-elapsed-header">Time elapsed:</div>
+                                        <div id="time-elapsed-numbers">00:00:00</div>
+                                </div>
+                                <div id="time-start" class="col-md-4">
+                                            <div id="time-start-header">Time started:</div>
+                                            <div id="time-start-numbers">00:00:00</div>
+                                </div>
+                         </div>
+                         <div class="row" id="progress-box">
+                             <div id="progress-header">Progress:</div>
+                             <div id="progress-bar">
+                                 <div id='progress'></div>
+                                 <div id="fifty-percent-line"></div>
+                             </div>
+                             <div id="zerop">0%</div>
+                             <div id="fiftyp">50%</div>
+                             <div id="hundredp">100%</div>
+                        
+                        </div>
+                        </div>
+                       
+                    <div id="main-box-right" class="col-md-5">
+                            <div id="money-earned">
+                                    <div id="money-earned-header">Money earned:</div>
+                                    <div id="money-earned-numbers">00.00$</div>
+                            </div>
+                            <div id="tax-info-box" class="row">
+                                <div id="tax">
+                                    <div id="tax-header">Tax:</div>
+                                    <div id="tax-numbers">00.00$</div>
+                                </div>
+                                <div id="gross">
+                                    <div id="gross-header">Gross:</div>
+                                    <div id="gross-numbers">00.00$</div>
+                                </div>
+                            </div>
+                            <div id="lunch-box">
+                                <div id="lunch-header">Did you take your lunch?*</div>
+                                <div id="lunch-radio-box">
+                                    <input type="radio" name="lunch" id="lunch-yes" value="Yes">Yes
+                                    <input type="radio" id="lunch-no" name="lunch" value="No" checked>No
+                                </div>
+                            </div>
+                            <div id="lunch-info">*This option substracts money for 30 minutes of work.</div>
+                    </div>
+                   
+                </div>
+                <div class="row" id="menu">
+                    <div id="data-edit" class="menu-button">Edit Data</div>
+                    <div class="menu-button">Save</div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>

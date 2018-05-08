@@ -1,0 +1,371 @@
+body  {
+    background-color: lightblue !important;
+}
+
+.container {
+    background-color: gray;
+    margin-top:20px;
+    border: solid 3px black;
+}
+
+#title-box {
+    background-color: gray;
+    height: 100px;
+}
+
+#logo {
+    margin-top:5px;
+}
+
+#title {
+    color:black;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 54px;
+    text-align: left;
+    margin-top:-80px;
+    margin-left:110px;
+}
+
+#input-box {
+    display:block;
+    height: 310px;
+    width: 500px;
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left: 0;
+    right: 0;
+    top:130px;
+    z-index:2;
+    
+    background-color:rgb(164, 164, 182);
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+border: solid 2px white;
+}
+
+.input-titles {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size:24px;
+}
+
+.input {
+    text-align: center;
+    margin-left:163px;
+
+    
+}
+
+.incorrect {
+    display:none;
+    float:right;
+    margin-right: 60px;
+    margin-top:5px;
+    color:red;
+    font-size: 12px;
+}
+
+.incorrect-active {
+    display:block;
+    float:right;
+    margin-right: 60px;
+    margin-top:5px;
+    color:red;
+    font-size: 12px;
+}
+
+#ok-button {
+    margin-left:223px;
+    margin-top:15px;
+}
+
+#tax-info{
+    margin-right:5px;
+    margin-top:3px;
+    text-align: right;
+    font-size:10px;
+}
+
+#main {
+    background-color: rgb(250, 215, 222);
+    width:100%;
+    
+}
+
+#main-box {
+    background-color: bisque;
+    height:430px;
+    border: solid 1px;
+}
+
+#main-box-left {
+    background-color:#05264b;
+    height: 100%;
+    border: solid 2px black;
+   
+}
+
+#time-left {
+    height: 150px;
+    width:400px;
+    margin-top:100px;
+    font-size: 34px;
+
+}
+
+#time-left-header {
+    font-family: 'Anton', sans-serif;
+    font-size: 34px;
+    margin-left:10px;
+    text-align: left;
+    color: rgb(206, 206, 206);
+}
+
+#time-left-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 104px;
+    line-height:100px;
+    text-align: center;
+    color: rgb(206, 206, 206);
+}
+
+#current-time {
+    height:70px; 
+}
+
+#times-info-box {
+
+    background-color: azure;
+}
+
+#current-time-header {
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    margin-left: 5px;
+}
+
+#current-time-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+#time-elapsed {
+    height:70px;
+}
+
+#time-elapsed-header {
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    margin-left: 5px;
+}
+
+#time-elapsed-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#time-start {
+    height:70px;
+}
+
+#time-start-header {
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    margin-left: 5px;
+}
+
+#time-start-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#main-box-right {
+    background-color: black;
+    height: 100%;
+    border: solid 2px black;
+}
+
+#money-earned {
+    height: 100px;
+    width:400px;
+    margin-top:100px;
+    font-size: 34px;
+
+}
+
+#money-earned-header {
+    font-family: 'Anton', sans-serif;
+    font-size: 34px;
+    margin-left:10px;
+    text-align: left;
+    color: rgb(206, 206, 206);
+}
+
+#money-earned-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 104px;
+    line-height:100px;
+    text-align: center;
+    color: rgb(238, 223, 13);
+}
+
+#tax-info-box {
+    margin-top:50px;
+    height:70px;
+    background-color: azure;
+}
+
+#tax{
+    float:left;
+}
+
+#tax-header {
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    margin-left: 5px;
+}
+
+#tax-numbers {
+    font-family: 'Anton', sans-serif;
+    color:darkred;
+    font-size: 44px;
+    margin-left:40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#gross-header {
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    margin-left: 245px;
+}
+
+#gross-numbers {
+    font-family: 'Anton', sans-serif;
+    font-size: 44px;
+    line-height: 40px;
+    margin-left: 225px;
+    text-align: center;
+}
+
+#lunch-box{
+
+    margin-top:35px;
+}
+
+#lunch-header{
+    font-family: 'Anton', sans-serif;
+    font-size :18px;
+    text-align: center;
+    color:white;
+}
+
+#lunch-radio-box{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color:white;
+}
+
+#lunch-info{
+    margin-top:10px;
+    margin-right:-10px;
+    text-align: right;
+    font-size:10px;
+    color:white;
+}
+
+#progress-box {
+    height:90px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    width:582px;
+   
+}
+
+#progress-header{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+#progress-bar {
+    height:40px;
+    width:582px;
+    border: solid 1px black; 
+    background-color: rgba(220,218,218,0.1) ;
+    
+}
+
+#progress{
+    height:100%;
+    width:0%;
+    background-color: green;
+}
+
+#fifty-percent-line{
+    width:290px;
+    border-right: 1px dotted black;
+    height:100%;
+    margin-top:-38px;
+    opacity: 0.5;
+    z-index:2;
+}
+
+#zerop {
+    float:left;
+    color: white;
+}
+
+#fiftyp{
+    margin-left: 255px;
+    float:left;
+    color: white;
+}
+
+#hundredp{
+    margin-left: 542px;
+    color: white;
+}
+
+
+
+#menu{
+    background-color: grey;
+    height: 30px;
+    border: solid 2px black;
+   
+}
+
+.menu-button{
+    height:100%;
+    width:70px;
+    font-family: 'Anton', sans-serif;
+    background-color:darkgrey;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border: solid 1px black;
+    float:left;
+
+}
+
+.menu-button:hover{
+    background-color: lightgray;
+    cursor:pointer;
+}
